@@ -12,7 +12,7 @@ app.listen(config.PORT, async()=>{
 // connect to database
 console.log("connecting to database...");
 // mongoose.set("StrictQuery", true);
-connect("mongodb://localhost:27017/bflux_db")
+connect(config.DB_URL);
 console.log("database connected successfully...")
 
 console.log(`server is running on localhost:${config.PORT}`)
